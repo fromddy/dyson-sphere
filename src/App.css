@@ -1,0 +1,92 @@
+.app {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: #0a0a2e;
+}
+
+.app canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Bottom-right hint */
+.hint {
+  position: absolute;
+  bottom: 1rem;
+  right: 1.2rem;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 0.75rem;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Help panel - bottom right, compact */
+.help-panel {
+  position: absolute;
+  bottom: 2.5rem;
+  right: 1.2rem;
+  padding: 1rem 1.25rem;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.85);
+  pointer-events: none;
+}
+
+.help-panel h3 {
+  margin: 0 0 0.6rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.help-row {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.2rem 0;
+  font-size: 0.8rem;
+}
+
+.help-row kbd {
+  display: inline-block;
+  min-width: 1.4rem;
+  padding: 0.1rem 0.35rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 0.75rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.help-row span {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.core-toggle {
+  position: absolute;
+  bottom: 1rem;
+  left: 1.2rem;
+  padding: 0.4rem 0.8rem;
+  background: rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+  backdrop-filter: blur(8px);
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.8rem;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.2s;
+}
+
+.core-toggle:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
